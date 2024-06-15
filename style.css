@@ -10,6 +10,26 @@
     background-size:cover;
     position:relative;
 }
+
+/* portfolio background image */
+.portfbg {
+    height: 100vh;
+    position: relative;
+}
+
+.portfbg::before {
+    content: "";
+    background: url('images/aboutbackground.jpeg');
+    background-size: cover;
+    opacity: 0.5;
+    /* Adjust the opacity value as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
